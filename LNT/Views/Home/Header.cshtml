@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- Your view content -->
+
+<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <!-- Left side of the header with small image -->
+        <a class="navbar-brand" href="#">
+            <img src="small-img.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            My Website
+        </a>
+
+        <!-- Right side of the header -->
+        <div class="navbar-nav ml-auto">
+            <!-- Display username -->
+            <span class="navbar-text mr-2">Welcome, @ViewData["UserName"]!</span>
+
+            <!-- Example button -->
+            <a class="btn btn-primary" href="#">Login</a>
+        </div>
+    </div>
+</header>

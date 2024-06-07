@@ -1,0 +1,613 @@
+﻿<!--page 4-->
+@model LNT.Models.ImageModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .page4 {
+        position: absolute;
+        top: 11%;
+        background: white;
+        width: 100%;
+        
+    }
+
+    .main {
+        height: 350px;
+        width: 80%;
+        margin-top: 5.5%;
+        margin-left: 10%;
+        background-color: whitesmoke;
+        border-radius: 30px;
+        box-shadow: 5px 10px 18px #888888;
+    }
+
+    .first {
+        margin-top: 20px;
+        margin-left: 100px;
+        display: flex;
+        padding-top: 20px;
+    }
+
+    .second {
+        margin-top: 20px;
+        margin-left: 100px;
+        display: flex;
+        padding-top: 20px;
+    }
+
+    .box1 {
+        height: 110px;
+        margin: 10px;
+        border-radius: 20px;
+        width: 14%;
+        background-color: rgb(8, 9, 52);
+    }
+
+        .box1:hover {
+            background-color: orangered;
+            border-radius: 20px;
+        }
+
+    .image1 img {
+        margin-left: 48px;
+        margin-top: 10px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .image1 p {
+        margin-left: 17px;
+        margin-top: 3px;
+        height: 45px;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .image2 img {
+        margin-left: 48px;
+        margin-top: 10px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .image2 p {
+        margin-left: 17px;
+        margin-top: 3px;
+        height: 45px;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 12px;
+        padding-bottom: 20px;
+    }
+
+    .box2 {
+        height: 110px;
+        margin: 10px;
+        border-radius: 20px;
+        width: 14%;
+        background-color: rgb(8, 9, 52);
+    }
+
+        .box2:hover {
+            background-color: orangered;
+            border-radius: 20px;
+        }
+
+    .box3:hover {
+        background-color: orangered;
+        border-radius: 20px;
+    }
+
+    .box4:hover {
+        background-color: orangered;
+        border-radius: 20px;
+    }
+
+    .box5:hover {
+        background-color: orangered;
+        border-radius: 20px;
+    }
+
+    .box6:hover {
+        background-color: orangered;
+        border-radius: 20px;
+    }
+
+    .box7:hover {
+        background-color: orangered;
+        border-radius: 20px;
+    }
+
+    .box8:hover {
+        background-color: orangered;
+        border-radius: 20px;
+    }
+
+    .box9:hover {
+        background-color: orangered;
+        border-radius: 20px;
+    }
+
+    .box3 {
+        height: 110px;
+        margin: 10px;
+        border-radius: 20px;
+        width: 14%;
+        background-color: rgb(8, 9, 52);
+    }
+
+    .box4 {
+        height: 110px;
+        margin: 10px;
+        border-radius: 20px;
+        width: 14%;
+        background-color: rgb(8, 9, 52);
+    }
+
+    .box5 {
+        height: 110px;
+        margin: 10px;
+        border-radius: 20px;
+        width: 14%;
+        background-color: rgb(8, 9, 52);
+    }
+
+    .box6 {
+        height: 110px;
+        margin: 10px;
+        border-radius: 20px;
+        width: 14%;
+        background-color: rgb(8, 9, 52);
+    }
+
+    .box7 {
+        height: 110px;
+        margin: 10px;
+        border-radius: 20px;
+        width: 14%;
+        background-color: rgb(8, 9, 52);
+    }
+
+    .box8 {
+        height: 110px;
+        margin: 10px;
+        border-radius: 20px;
+        width: 14%;
+        background-color: rgb(8, 9, 52);
+    }
+
+    .box9 {
+        height: 110px;
+        margin: 10px;
+        border-radius: 20px;
+        width: 14%;
+        background-color: rgb(8, 9, 52);
+    }
+
+    .image3 img {
+        margin-left: 48px;
+        margin-top: 10px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .image3 p {
+        margin-left: 17px;
+        margin-top: 5px;
+        height: 45px;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 12px;
+        margin-bottom: 2px;
+    }
+
+    .image4 img {
+        margin-left: 48px;
+        margin-top: 10px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .image4 p {
+        margin-left: 17px;
+        margin-top: 3px;
+        height: 45px;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 20px;
+    }
+
+    .image5 img {
+        margin-left: 48px;
+        margin-top: 10px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .image5 p {
+        margin-left: 17px;
+        margin-top: 3px;
+        height: 45px;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+    }
+
+    .image6 img {
+        margin-left: 48px;
+        margin-top: 10px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .image6 p {
+        margin-left: 17px;
+        margin-top: 3px;
+        height: 45px;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 15px;
+    }
+
+    .image7 img {
+        margin-left: 48px;
+        margin-top: 10px;
+        height: 45px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .image7 p {
+        margin-left: 17px;
+        margin-top: 3px;
+        height: 45px;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-right: 7px;
+    }
+
+    .image8 img {
+        margin-left: 48px;
+        margin-top: 10px;
+        height: 45px;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .image8 p {
+        margin-left: 17px;
+        margin-top: 3px;
+        height: 45px;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 20px;
+    }
+
+    .image9 img {
+        margin-left: 48px;
+        margin-top: 10px;
+        height: 45px;
+        text-align: center;
+    }
+
+    .image9 p {
+        margin-left: 17px;
+        margin-top: 3px;
+        height: 45px;
+        color: white;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 20px;
+    }
+
+    .third{
+        position:absolute;
+        top:92%;
+    }
+    .text {
+        margin-top: 45px;
+        margin-left: 125px;
+    }
+
+        .text p {
+            margin: 0;
+        }
+
+
+    .lbox1 {
+        background-color: green;
+        height: 90px;
+        width: 9%;
+        margin-top: -105px;
+        margin-left: 450px;
+    }
+
+        .lbox1 img {
+            margin-top: 18px;
+            margin-left: 45px;
+            height: 60%;
+            width: 50%;
+        }
+
+        .lbox1 p {
+            color: green;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+    .lbox2 {
+        background-color: orangered;
+        height: 90px;
+        width: 9%;
+        margin-top: -90px;
+        margin-left: 620px;
+    }
+
+        .lbox2 img {
+            margin-top: 18px;
+            margin-left: 35px;
+            height: 60%;
+            width: 50%;
+        }
+
+        .lbox2 p {
+            color: orangered;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+    .lbox3 {
+        background-color: rgb(33, 177, 213);
+        height: 90px;
+        width: 9%;
+        margin-top: -90px;
+        margin-left: 790px;
+    }
+
+        .lbox3 img {
+            margin-top: 18px;
+            margin-left: 35px;
+            height: 60%;
+            width: 50%;
+        }
+
+        .lbox3 p {
+            color: rgb(33, 177, 213);
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+    .lbox4 {
+        background-color: rgb(40, 46, 212);
+        height: 90px;
+        width: 9%;
+        margin-top: -90px;
+        margin-left: 960px;
+    }
+
+        .lbox4 img {
+            margin-top: 18px;
+            margin-left: 35px;
+            height: 60%;
+            width: 50%;
+        }
+
+        .lbox4 p {
+            color: rgb(40, 46, 212);
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+    .lbox5 {
+        background-color: rgb(212, 209, 40);
+        height: 90px;
+        width: 9%;
+        margin-top: -90px;
+        margin-left: 1130px;
+    }
+
+        .lbox5 img {
+            margin-top: 18px;
+            margin-left: 35px;
+            height: 60%;
+            width: 50%;
+        }
+
+        .lbox5 p {
+            color: rgb(212, 209, 40);
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
+    .lbox6 {
+        background-color: rgb(212, 40, 178);
+        height: 90px;
+        width: 9%;
+        margin-top: -90px;
+        margin-left: 1300px;
+    }
+
+        .lbox6 img {
+            margin-top: 18px;
+            margin-left: 35px;
+            height: 60%;
+            width: 50%;
+        }
+
+        .lbox6 p {
+            color: rgb(212, 40, 178);
+            font-size: 18px;
+            margin-top: 30px;
+        }
+</style>
+<section class="page4" id="page4">
+    <div class="main">
+        <div class="first">
+            <div class="box1">
+                <div class="image1">
+                    <img src="~/images/ticketjagruti.png" />
+                    <p>IT support Request</p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="image2">
+                    <img src="~/images/video-camera.png" />
+                    <p>VC Request</p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="image3">
+                    <img src="~/images/vinyl.png" />
+                    <p>CD Writing</p>
+                </div>
+            </div>
+            <div class="box4">
+                <div class="image4">
+                    <img src="~/images/vpn.png" />
+                    <p>VPN ID</p>
+                </div>
+            </div>
+            <div class="box5">
+                <div class="image5">
+                    <img src="~/images/laptop-computer.png" />
+                    <p>Laptop Request</p>
+                </div>
+            </div>
+            <div class="box6">
+                <div class="image6">
+                    <img src="~/images/printer.png" />
+                    <p>Color Print</p>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="box7">
+                <div class="image7">
+                    <img src="~/images/id-card.png" />
+                    <p>TCP ID Creation</p>
+                </div>
+            </div>
+            <div class="box8">
+                <div class="image8">
+                    <img src="~/images/cloud-computing.png" />
+                    <p>FTP ID</p>
+                </div>
+            </div>
+            <div class="box9">
+                <div class="image9">
+                    <img src="~/images/add-user.png" />
+                    <p>New Join</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="third">
+        <div class="text">
+            <h2>My Request Summary</h2>
+
+
+            <p>
+                Show count of your ticket & services.Click<br>
+                on icon to access the details of ticket &<br>
+                service request in the table format.
+            </p>
+        </div>
+
+        <div class="right">
+            <div class="lbox1">
+                <img src="~/images/cancel.png" />
+                <p>
+                    Unassigned
+                    Support<br>
+                    Request
+
+                </p>
+            </div>
+            <div class="lbox2">
+                <img src="~/images/folder.png" />
+                <p>
+                    Open Support<br>
+                    Request
+
+                </p>
+            </div>
+            <div class="lbox3">
+                <img src="~/images/folder-border.png" />
+                <p>
+                    Closed Support<br>
+                    Request
+
+
+
+                </p>
+            </div>
+            <div class="lbox4">
+                <img src="~/images/group.png" />
+                <p>
+                    Service
+                    Pending with<br>
+                    Dept
+
+
+                </p>
+            </div>
+            <div class="lbox5">
+                <img src="~/images/id-card.png" />
+                <p>
+                    Service
+                    Pending with<br>
+                    SR
+
+
+                </p>
+            </div>
+            <div class="lbox6">
+                <img src="~/images/handshake1.png" />
+                <p>
+                    Closed Service
+
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    </div>
+    </div>

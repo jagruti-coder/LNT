@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ITservice</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .logo-left {
+           height:60px;
+            width: 200px;
+            padding-right: 20px;
+            margin-right: 20px;
+        }
+
+        .carousel, .slide, .pointer-event {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        .container-fluid {
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .logo-pc {
+            height: 60px;
+        }
+
+        #carouselExampleIndicators {
+            width: 100% !important;
+            position:absolute;
+            top:21%;
+        }
+
+        .h5.mb-0 {
+            padding: 0 10px;
+            margin: 0 10px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #003366; /* Dark Blue Background */
+            padding: 10px 20px;
+            overflow: hidden;
+            position: fixed;
+            top:12%;
+            width:100%;
+            z-index: 1000;
+        }
+        .navbar-left, .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+            .nav-item:hover {
+                color: orange;
+                background-color: #00509E; /* Slightly lighter blue on hover */
+                border-radius: 5px;
+            }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: #003366;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+            .dropbtn:hover {
+                background-color: #00509E;
+                border-radius: 5px;
+            }
+      
+        /* Dropdown Stability */
+        .dropdown:hover .dropdownMenuButton,
+        .dropdownMenuButton:hover {
+            display: block;
+        }
+
+        .dropdownMenuButton {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 160px;
+            margin-top: 0.5rem; /* Adjust as needed */
+            border-radius: 5px;
+            transition: display 0.3s; /* Add transition to smooth out the appearance */
+        }
+
+            .dropdownMenuButton a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                transition: background-color 0.3s;
+            }
+
+                .dropdownMenuButton a:hover {
+                    background-color: #f1f1f1;
+                }
+
+        .navbar .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+
+        $(document).ready(function(){
+          $('.dropdown-toggle').dropdown();
+        });
+        /* Image */
+        .img-container {
+            width: 100%; /* Ensure the container takes full width */
+            overflow: hidden; /* Hide any overflow */
+        }
+
+            .img-container img {
+                width: 100%; /* Make the image take full width of its container */
+                display: block; /* Ensure it behaves as a block element */
+                margin: 0; /* Remove any default margins */
+                padding: 0; /* Remove any default padding */
+            }
+
+        
+                  
+        .border-top {
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .box-shadow {
+            box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #1b6ec2;
+            border-color: #1861ac;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            color: #fff;
+            background-color: #1b6ec2;
+            border-color: #1861ac;
+        }
+
+        .carousel-item img {
+            height: 80vh;
+            width: 100% !important;
+            object-fit: cover;
+        }
+
+        .d-block.w-100 {
+            padding: 0;
+            margin: 0;
+            width: 100% !important;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            top: 85%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <img src="https://auth.lntpower.com/cas/images/tbits_logo.jpg" alt="LNT POWER" class="logo-left" />
+                <div class="d-flex align-items-center">
+                    <img src="https://static.vecteezy.com/system/resources/previews/000/569/420/original/vector-desktop-computer-icon.jpg" alt="PC" class="logo-pc mr-2" />
+                    <span class="h5 mb-0">POWER IT</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="jagruti" id="jagruti">
+    <nav class="navbar">
+        
+        <div class="navbar-left">
+            <a href="#jagruti" class="nav-item">Home</a>
+            <a href="/Home/create"class="nav-item">Create New Request</a>
+            <a href="#" class="nav-item">My View</a>
+            <a href="#page2" class="nav-item">What We Do</a>
+            <a href="#page3" class="nav-item">Self Help</a>
+            <a href="#" class="nav-item">Feedback</a>
+            <a href="#" class="nav-item">Dev-Ops</a>
+        </div>
+        <div class="navbar-right">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    WELCOME USER
+                </button>
+            </div>
+    </nav>
+    </section>
+    <div class="container-fluid">
+        @RenderBody()
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,660 @@
+body {
+    width: 100%;
+}
+
+.container {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.page1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    margin-right: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.img1 {
+    padding: 10px;
+    max-height: 50px; /* Adjust the logo size */
+    margin-left: 10px; /* Space between text and logo */
+}
+
+.header .brand-name {
+    margin-right: 50px;
+    padding-right: 20px;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.img2 {
+    padding: 0%;
+    width: 170px;
+    position: absolute;
+    left: 1px;
+}
+
+#jagruti {
+    position: absolute;
+    top: 1%;
+}
+
+.container, .container-md,
+.container-sm {
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel-slide, .carousel-image, .carousel-inner {
+    height: 100%;
+    width: 100% !important;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+}
+/* styles.css */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100% !important; /* Adjust based on your layout */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item {
+    min-width: 100% !important;
+    margin: 0;
+    padding: 0; /* This ensures each item takes up the full width of the carousel container */
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+}
+
+.carousel-image {
+    width: 100% width:100% !important;
+    /* Change this value to set the desired width */
+    margin: 0;
+    padding: 0; /* Center the image */
+    display: block;
+}
+
+.carousel-control-next.icon {
+    position: absolute;
+    left: 80;
+}
+
+.d-block w-100 {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.page2 {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    left: 0%;
+}
+
+#page2 {
+    position: absolute;
+    top: 89%;
+    width: 100%;
+    left: 0%;
+}
+
+.image_Logo {
+    position: absolute;
+    bottom: 64%;
+    right: 45%;
+    height: 150px;
+    width: 150px;
+    border-radius: 60%;
+}
+
+.whatwedo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    position: absolute;
+    right: 45%;
+    top: 36%;
+}
+
+.box {
+    margin-top: 230px;
+    background-color: whitesmoke;
+    margin-left: 60px;
+    top: 80%;
+    height: 600px;
+    width: 92%;
+    left: 4%;
+    border-radius: 30px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.one {
+    margin-top: 210px;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    height: 400px;
+    margin-left: 80px;
+    width: 300px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.img4 {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.application {
+    color: orange;
+    position: absolute;
+    top: 60%;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.para1 {
+    color: black;
+    position: absolute;
+    top: 68%;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.two {
+    margin-top: 210px;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    left: 26%;
+    margin-left: 40px;
+    height: 400px;
+    width: 300px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.img5 {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.infra {
+    color: orange;
+    position: absolute;
+    top: 60%;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.para2 {
+    color: black;
+    position: absolute;
+    top: 68%;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.three {
+    margin-top: 210px;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    margin-right: 50px;
+    right: 26%;
+    height: 400px;
+    width: 300px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.img6 {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.info {
+    color: orange;
+    position: absolute;
+    top: 60%;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.para3 {
+    color: black;
+    position: absolute;
+    top: 68%;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.four {
+    margin-top: 210px;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    height: 400px;
+    width: 300px;
+    margin-right: 70px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.img7 {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.IT {
+    color: orange;
+    position: absolute;
+    top: 60%;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.para4 {
+    color: black;
+    position: absolute;
+    top: 68%;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+#page3 {
+    position: absolute;
+    top: 196%;
+    width: 100%;
+    left: 0%;
+}
+
+.page3 {
+    position: absolute;
+    top: 450%;
+    display: block;
+    width: 1520px;
+    margin: 0%;
+    padding: 0%;
+    right: 0%;
+    left: 0%;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.jaggy {
+    background-color: whitesmoke;
+    margin-top: 210px;
+    height: 720px;
+    width: 92%;
+    margin-left: 60px;
+    border-radius: 30px;
+    box-shadow: 5px 2px 18px #888888;
+}
+
+.imglogo {
+    position: absolute;
+    top: 150px;
+    right: 45%;
+    height: 150px;
+    width: 150px;
+    border-radius: 60%;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.selfhelp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    position: absolute;
+    right: 46%;
+    top: 310px;
+}
+
+.one1 {
+    background-color: white;
+    position: absolute;
+    top: 350px;
+    right: 72%;
+    height: 270px;
+    margin-left: 80px;
+    width: 280px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.sap {
+    height: 135px;
+    width: 280px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.head1 {
+    color: orange;
+    position: absolute;
+    top: 47%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.parag1 {
+    color: black;
+    position: absolute;
+    top: 58%;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.two2 {
+    background-color: white;
+    position: absolute;
+    top: 350px;
+    right: 51%;
+    height: 270px;
+    width: 280px;
+    margin-left: 80px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.ealps {
+    height: 135px;
+    width: 280px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.head2 {
+    color: orange;
+    position: absolute;
+    top: 47%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.parag2 {
+    color: black;
+    position: absolute;
+    top: 58%;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.three3 {
+    background-color: white;
+    position: absolute;
+    top: 350px;
+    right: 30%;
+    margin-left: 80px;
+    height: 270px;
+    width: 280px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.power {
+    height: 135px;
+    width: 280px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.head3 {
+    color: orange;
+    position: absolute;
+    top: 47%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+
+.parag3 {
+    color: black;
+    position: absolute;
+    top: 58%;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.four4 {
+    background-color: white;
+    position: absolute;
+    top: 350px;
+    right: 9%;
+    height: 270px;
+    width: 280px;
+    margin-left: 80px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.sapa {
+    height: 135px;
+    width: 280px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.head4 {
+    color: orange;
+    position: absolute;
+    top: 47%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.parag4 {
+    color: black;
+    position: absolute;
+    top: 58%;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.five5 {
+    background-color: white;
+    position: absolute;
+    top: 650px;
+    right: 72%;
+    height: 270px;
+    width: 280px;
+    margin-left: 80px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.word {
+    height: 135px;
+    width: 280px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.head5 {
+    color: orange;
+    position: absolute;
+    top: 47%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.parag5 {
+    color: black;
+    position: absolute;
+    top: 58%;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.six6 {
+    background-color: white;
+    position: absolute;
+    top: 650px;
+    right: 51%;
+    height: 270px;
+    width: 280px;
+    margin-left: 80px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.excel {
+    height: 135px;
+    width: 280px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.head6 {
+    color: orange;
+    position: absolute;
+    top: 47%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.parag6 {
+    color: black;
+    position: absolute;
+    top: 58%;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.seven7 {
+    background-color: white;
+    position: absolute;
+    top: 650px;
+    right: 30%;
+    height: 270px;
+    width: 280px;
+    margin-left: 80px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.LT {
+    height: 135px;
+    width: 280px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.head7 {
+    color: orange;
+    position: absolute;
+    top: 47%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.parag7 {
+    color: black;
+    position: absolute;
+    top: 58%;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.eight8 {
+    background-color: white;
+    position: absolute;
+    top: 650px;
+    right: 9%;
+    height: 270px;
+    width: 280px;
+    margin-left: 80px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.printer {
+    height: 135px;
+    width: 280px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.head8 {
+    color: orange;
+    position: absolute;
+    top: 47%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.parag8 {
+    color: black;
+    position: absolute;
+    top: 68%;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.carouselExampleIndicator {
+    padding: 0px;
+    margin: 0px;
+}

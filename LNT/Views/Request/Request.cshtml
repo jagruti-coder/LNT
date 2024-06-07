@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VC Request Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .vc-request-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 1000px; /* Increased the width */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* Adjusted for three columns */
+            gap: 20px;
+        }
+        .vc-request-form h2 {
+            grid-column: span 3; /* Span three columns */
+            text-align: center;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+        }
+        .form-group i {
+            background-color: navy;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        .form-group label {
+            flex: 1;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            flex: 2;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group.checkbox-group {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .form-group.checkbox-group input {
+            margin-right: 10px;
+        }
+        .full-width {
+            grid-column: span 3; /* Span three columns */
+        }
+    </style>
+</head>
+<body>
+
+<div class="vc-request-form">
+    <h2>VC Request Form</h2>
+    <div class="form-group full-width">
+        <i class="fas fa-box"></i>
+        <label for="select-box">Select Radio:</label>
+        <select id="select-box">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option3">Option 4</option>
+            <option value="option3">Option 5</option>
+            <option value="option3">Option 6</option>
+            <option value="option3">Option 7</option>
+            <option value="option3">Option 8</option>
+            <option value="option3">Option 9</option>
+            <option value="option3">Option 10</option>
+        </select>
+    </div>
+    <div class="form-group full-width">
+        <i class="fas fa-map-marker-alt"></i>
+        <label for="remote-location">Remote Location:</label>
+        <div class="checkbox-group" id="remote-location">
+            <label><input type="checkbox" value="location1"> Location 1</label>
+            <label><input type="checkbox" value="location2"> Location 2</label>
+            <label><input type="checkbox" value="location3"> Location 3</label>
+            <label><input type="checkbox" value="location4"> Location 4</label>
+            <label><input type="checkbox" value="location5"> Location 5</label>
+            <!-- Additional checkboxes --><br><br>
+            <label><input type="checkbox" value="location6"> Location 6</label>
+            <label><input type="checkbox" value="location7"> Location 7</label>
+            <label><input type="checkbox" value="location8"> Location 8</label>
+            <label><input type="checkbox" value="location9"> Location 9</label>
+            <label><input type="checkbox" value="location10"> Location 10</label>
+        </div>
+    </div>
+    <div class="form-group full-width">
+        <i class="fas fa-info-circle"></i>
+        <label for="purpose">Purpose of VC:</label>
+        <textarea id="purpose" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <i class="fas fa-calendar-alt"></i>
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date">
+    </div>
+    <div class="form-group">
+        <i class="fas fa-clock"></i>
+        <label for="start-time">Start Time:</label>
+        <input type="time" id="start-time">
+    </div>
+    <div class="form-group">
+        <i class="fas fa-users"></i>
+        <label for="participants">Number of Participants:</label>
+        <input type="number" id="participants">
+    </div>
+    <div class="form-group full-width">
+        <i class="fas fa-info-circle"></i>
+        <label for="other-details">Other Details:</label>
+        <textarea id="other-details" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <i class="fas fa-sitemap"></i>
+        <label for="approval-flow">Approval Flow:</label>
+        <input type="text" id="approval-flow">
+    </div>
+    <div class="form-group">
+        <i class="fas fa-calendar-alt"></i>
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date">
+    </div>
+    <div class="form-group">
+        <i class="fas fa-clock"></i>
+        <label for="end-time">End Time:</label>
+        <input type="time" id="end-time">
+    </div>
+</div>
+
+</body>
+</html>
